@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final</title>
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+</head>
+<body class="bg-light">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container px-4">
+        <img src="images/logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+        <span class="text-white">FB Digital Creatives</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-inline-flex flex-column flex-lg-row ms-auto" id="navbarNav">
+          <ul class="navbar-nav ps-4-lg">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Bloom</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Our Roots</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Lets Bloom Together</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Blossoms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="container px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <img src="images/hero3.jpg" id="heroImage" class="d-block mx-lg-auto img-fluid" alt="Hero Image" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="mb-5">Let's Bloom Together</h1>
+            <!-- <p>Click the image to discover more.</p> -->
+            <button type="submit" class="blink-button bg-primary">click the image to discover more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="hiddenContent" class="hidden-content">
+      <section class="bg-dark text-light py-5">
+        <div class="container px-4">
+          <img src="images/petals.jpg" id="petalImage" class="d-block mx-lg-auto img-fluid mb-5" alt="Petals Image">
+          <h2 class="mb-5 text-center">Get In Touch</h2>
+          <p class="mb-5 text-center">We'd love to hear from you</p>
+
+          <section class="py-5 bg-dark text-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 order-lg-2">
+                  <img class="img-fluid" src="images/contact.jpg" alt="Contact Image">
+                </div>
+                <div class="col-lg-6 order-lg-1 align-self-center">
+                  <div class="form-section">
+                    <h2>Drop us a petal</h2>
+                    <p>Share your thoughts, inquiries, or just say hello by filling out our contact form below.</p>
+                    <form>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="country">Select Country</label>
+                            <select class="form-control" id="country">
+                              <option>Select Country</option>
+                              <option>United States</option>
+                              <option>Canada</option>
+                              <option>United Kingdom</option>
+                              <option>Nigeria</option>
+                              <option>Australia</option>
+                              <option>Mexico</option>
+                              <option>France</option>
+                              <option>Germany</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="services">Select Services</label>
+                            <select class="form-control" id="services">
+                              <option>Select Service</option>
+                              <option>Web Development</option>
+                              <option>Photography</option>
+                              <option>Video Production</option>
+                              <option>UI/UX Design</option>
+                              <option>Digital Graphics</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group mt-3">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                      </div>
+                      <div class="form-group mt-3">
+                        <label for="project-brief">Project Brief</label>
+                        <textarea class="form-control" id="project-brief" rows="3" placeholder="Provide a brief description of your project..."></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary mt-4">Send</button>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="py-5">
+            <div class="container">
+              <h2>Find our Garden</h2>
+              <p>Come visit our vibrant garden! Here's our location:</p>
+              <div class="map-container mb-4">
+                <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22431.555641255592!2d-75.7930345256836!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711556599147!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <p><strong>Phone:</strong> +1234 577 890</p>
+              <p><strong>Email:</strong> contact@fbdigitalcreatives.com</p>
+              <p><strong>Address:</strong> Suite 122-458, Digital Creative Avenue, Ottawa, Canada K34 PTS</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <div class="col-6 offset-5 text-center p-2">
+                <h3>Garden Assistance</h3>
+                <p>Need help or support? Our team is here to assist you. Reach out to our customer support for any assistance you need.</p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <h3>Customer Support</h3>
+                    <p>Call - +1 123 456 7890</p>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <h3>General Questions</h3>
+                    <p>Email - support@fbdigitalcreatives.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <h2>Connect with Our Garden</h2>
+              <p>Join our community and stay updated by following us on social media:</p>
+              <div class="social-icons">
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-secondary text-light py-3">
+    <div class="container">  
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Sitemap</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Bloom</a></li>
+            <li><a href="about.html" class="text-white">Our Roots</a></li>
+            <li><a href="contact.html" class="text-white">Nurture (Resource Hub)</a></li>
+            <li><a href="#" class="text-white">Sprout Ideas (Blog)</a></li>
+            <li><a href="#" class="text-white">Showcase Garden</a></li>
+            <li><a href="services.html" class="text-white">Blossoms</a></li>
+            <li><a href="contact.html" class="text-white">Lets bloom together</a></li>
+            <li><a href="#" class="text-white">Join our Garden</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Legal</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Privacy Petals</a></li>
+                <li><a href="#" class="text-white">Terms of Bloom</a></li>
+              </ul>
+              <h4>Accessibility Options</h4>
+              <div class="accessibility-options">
+                <button class="btn btn-sm btn-light" onclick="adjustFontSize('increase')">A+</button>
+                <button class="btn btn-sm btn-light" onclick="adjustFontSize('decrease')">A-</button>
+                <button class="btn btn-sm btn-light" onclick="toggleHighContrast()">High Contrast</button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4>Social Media</h4>
+              <a href="https://twitter.com" target="_blank" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+              <a href="https://facebook.com" target="_blank" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com" target="_blank" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+              <a href="https://linkedin.com" target="_blank" class="text-white "><i class="fab fa-linkedin-in mb-5"></i></a>
+              <h4>Language Selection</h4>
+              <select class="form-control">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2024 FB Digital Creatives, Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer> 
+
+  <button id="back-to-top" class="btn btn-primary back-to-top" onclick="scrollToTop()">&#8679;</button>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Show or hide the "Back to Top" button
+    window.onscroll = function() {
+      var button = document.getElementById('back-to-top');
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        button.style.display = 'block';
+      } else {
+        button.style.display = 'none';
+      }
+    };
+
+    // Scroll to the top of the document
+    function scrollToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+
+    // JavaScript to toggle the visibility of content
+    document.getElementById('heroImage').addEventListener('click', function() {
+      var hiddenContent = document.getElementById('hiddenContent');
+      hiddenContent.classList.remove('hidden-content');
+    });
+
+    document.getElementById('petalImage').addEventListener('click', function() {
+      var hiddenContent = document.getElementById('hiddenContent');
+      hiddenContent.classList.add('hidden-content');
+      window.scrollTo(0, 0); // Scroll back to the top
+    });
+
+    // JavaScript for accessibility
+    function adjustFontSize(action) {
+      var body = document.body;
+      var style = window.getComputedStyle(body, null).getPropertyValue('font-size');
+      var currentSize = parseFloat(style);
+      if (action === 'increase') {
+        body.style.fontSize = (currentSize + 1) + 'px';
+      } else if (action === 'decrease') {
+        body.style.fontSize = (currentSize - 1) + 'px';
+      }
+    }
+  
+    function toggleHighContrast() {
+      var body = document.body;
+      if (body.classList.contains('high-contrast')) {
+        body.classList.remove('high-contrast');
+      } else {
+        body.classList.add('high-contrast');
+      }
+    }
+
+  </script>
+
+  
+</body>
+</html>
